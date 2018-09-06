@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      build_web_compilers|entrypoint:
+        generate_for:
+          - test/**
+
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+builders:
+  json_l10n_serializable:
+    import: "package:json_l10n_serializable/builder.dart"
+    builder_factories: ["jsonL10nSerializable"]
+    build_extensions: {".dart": ["json_l10n_serializable.l10n.part"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen"]

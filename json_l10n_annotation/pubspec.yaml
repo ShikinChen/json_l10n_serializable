@@ -1,0 +1,9 @@
+name: json_l10n_annotation
+version: 0.0.1
+description: >-
+  将json转成本地化类工具
+homepage: https://github.com/ShikinChen
+author: Shiki
+environment:
+  sdk: '>=2.0.0-dev.54.0 <3.0.0'
+
