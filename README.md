@@ -7,12 +7,15 @@
 ```yaml
 dependencies:
   json_l10n_annotation:
-    path: ../json_l10n_annotation
+    git:
+        url: git://github.com/ShikinChen/json_l10n_serializable.git
+        path: json_l10n_annotation
 
 dev_dependencies:
-  build_runner: ^0.10.0
   json_l10n_serializable:
-    path: ../json_l10n_serializable
+    git:
+      url: git://github.com/ShikinChen/json_l10n_serializable.git
+      path: json_l10n_serializable
 ```
 
 在对应类或者方法上面写上@JsonLocalization并且写上json文件路径

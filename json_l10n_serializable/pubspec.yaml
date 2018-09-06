@@ -7,11 +7,12 @@ author: Shiki
 environment:
   sdk: '>=2.0.0-dev.54.0 <3.0.0'
 dependencies:
+#  json_l10n_annotation:
+#    path: ../json_l10n_annotation
   json_l10n_annotation:
-    path: ../json_l10n_annotation
-  #  json_annotation: ^1.0.0
-#  meta: ^1.1.0
-#  path: ^1.3.2
+    git:
+      url: git://github.com/ShikinChen/json_l10n_serializable.git
+      path: json_l10n_annotation
   source_gen: ^0.9.0+1
 
 dev_dependencies:
