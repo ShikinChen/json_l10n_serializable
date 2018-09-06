@@ -45,12 +45,13 @@ class JsonLocalizationGenerator
     Map<String, dynamic> _\$${lowerFirstCase(element.name)}JsonLocalization(String language) => $thing.map((key, value) {
       var val = value;
       if (value is Map) {
-        val = value[language];
+        Map<String, dynamic> map = value as Map<String, dynamic>;
+        val = map[language];
         if (val == null) {
-          val = value[value.keys.elementAt(0)];
+          val = map[map.keys.elementAt(0)];
         }
       }
-      return MapEntry(key,val);
+      return MapEntry(key, val);
     });''';
   }
 
