@@ -43,8 +43,10 @@ class JsonLocalizationGenerator
     ${languageBuffer.toString()}\n
     ${keyBuffer.toString()}\n 
     Map<String, dynamic> _\$${lowerFirstCase(element.name)}JsonLocalization(String language) => $thing.map((key, value) {
-      var val = value;
-      if (value is Map) {
+      var val;
+      if (value is String) {
+        val = value;
+      } else if (value is Map) {
         Map<String, dynamic> map = value as Map<String, dynamic>;
         val = map[language];
         if (val == null) {
