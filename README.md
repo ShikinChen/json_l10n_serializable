@@ -1,3 +1,4 @@
+#dart官方已经实现本地化文件生成方案具体看[这里](https://proandroiddev.com/flutter-localization-step-by-step-30f95d06018d)
 ## 根据json文件生成本地化代码类
 基本[json_serializable](https://github.com/dart-lang/json_serializable)源码中的@JsonLiteral简单改造
 ## 使用说明
